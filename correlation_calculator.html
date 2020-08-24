@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nick Marek | Correlation Calc.</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/correlation_calculator.jpg">
+		</div>
+		
+		<h3>Correlation Calculator</h3>
+
+		<p>
+		In Logistics2, we had the task of dealing with issues of health and sustainability in the field of transport and logistics. Fortunately, the professor agreed that if I could find a suitable project I could code something.
+		<br>
+		<br>
+		So I chose to demonstrate the effect of road traffic on the particulate matter content in the air. I have developed a correlation calculator that takes the relevant data from freely available APIs, evaluates it, saves it and outputs it to a front end.
+		<br>
+		<br>
+		Feel free to check out the <a href="https://korrelationsrechner.marek-webdesign.com" target="_blank">project (german)</a> and the code on <a href="https://github.com/Dergarcon/korrelationsrechner" target="_blank">Github</a>.
+		</p>
+
+		<h3>Technologies:</h3>
+		<h5>Backend:</h5>
+		<ul>
+			<li>- JavaScript</li>
+			<li>- googleapis, google-spreadsheets, promisify, node-fetch, moment</li>			
+			<li>- Google Cloud Platform -> f1-micro (small virtual machine)</li>			
+		</ul>
+		<br>
+		<h5>Frontend:</h5>
+		<ul>			
+			<li>- HTML5 & CSS3, JavaScript</li>
+			<li>- mdBootstrap, gulp</li>			
+			<li>- CI/CD -> git-Netlify-pipeline</li>						
+		</ul>
+		<br>
+		<h5>APIs used:</h5>
+		<ul>
+			<li>- <a href="https://developer.here.com/" target="_blank">here</a> (traffic data)</li>
+			<li>- <a href="https://luftdaten.info/" target="_blank">luftdaten.info</a> (air data)</li>			
+		</ul>
+<br>
+
+		<h5>Architecture</h5>
+		<div class="img-container">
+			<img src="images/cc_architektur.jpg">
+		</div>
+
+		<h5>Statistics</h5>
+		<div class="img-container">
+			<img src="images/cc_statistics.jpg">
+		</div>
+
+		<h5>Real Time Data</h5>
+		<div class="img-container">
+			<img src="images/cc_realtimedata.jpg">
+		</div>	
+
+	</div>
+
+</body>
+</html>
